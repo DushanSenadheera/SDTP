@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),url('../assets/Colombo_800x520-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.sign-in{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    width: 40%;
+    height: 100vh;
+    padding: 18px;
+    border-radius: 22px 0 0 22px;
+}
+
+.sign-in-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 85%;
+}
+
+.sign-in h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.sign-in-btn{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 22px;
+}
+
+.sign-in-form p a{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+form{
+    width: 80%;
+}
+
+form input{
+    width: 100%;
+    padding: 8px;
+    margin: 12px;
+}
+
+.name{
+    display: flex;
+    width: 100%;
+}
+
+.name input{
+    width: 45%;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 600px){
+
+    .sign-in{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 60%;
+        border-radius: 18px; 
+        text-align: center;
+    }
+
+}

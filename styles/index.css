@@ -24,7 +24,7 @@ header{
     background-repeat: no-repeat;
 }
 
-nav{
+/* nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -59,7 +59,7 @@ nav ul li a{
     border-radius: 2rem;
     border: none;
     cursor: pointer;
-}
+} */
 
 .header-content h3{
     color: #fff;
