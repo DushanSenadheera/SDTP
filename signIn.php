@@ -26,11 +26,13 @@
                     <p>
                         Don't you have an account?
                         <br>
-                        <a href="register.jsp">Register</a> from here
+                        <a href="register.php">Register</a> from here
                     </p>
                 </div>
             </div>
         </div>
+        <footer>
         <?php include 'footer.php' ?> 
+        </footer>
 </body>
 </html>

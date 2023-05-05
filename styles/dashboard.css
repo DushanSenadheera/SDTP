@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.adminContainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.navLinks {
+    width: 20%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.navLinks ul {
+    padding: 1rem;
+}
+
+.navLinks ul li {
+    padding: 0.5rem 0;
+}
+
+.navLinks ul :hover {
+    background-color: var(--select);
+    border-radius: 0.25rem;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+.navContent {
+    padding: 2rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+small {
+    color: grey;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+#admin-ico {
+    padding-left: 0.25rem;
+}
+
+.overview form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form input{
+    padding: 0.5rem 2rem;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5rem;
+}
+
+.overview h3{
+    color: var(--primary-color);
+}

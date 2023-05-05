@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
-<footer>
             <div class="footer-top">
                 <div class="footer-logo">
                     <h2 class="logo">LOGO</h2>
@@ -17,7 +16,7 @@
                     <h4>Navigation</h4>
                     <br>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="#">Explore</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
@@ -48,6 +47,5 @@
             <div class="footer-bottom">
                 <small>Designed & Developed By Group 22</small>
             </div>
-        </footer>
 </body>
 </html>
