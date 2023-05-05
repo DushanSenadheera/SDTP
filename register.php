@@ -35,11 +35,13 @@
                     <p>
                         Do you have an account?
                         <br>
-                        <a href="signIn.jsp">Sign In</a> from here
+                        <a href="signIn.php">Sign In</a> from here
                     </p>
                 </div>
             </div>
         </div>
-        <?php include 'footer.php' ?> 
+        <footer>
+        <?php include 'footer.php' ?>
+        </footer> 
 </body>
 </html>

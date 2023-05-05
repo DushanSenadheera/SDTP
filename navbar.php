@@ -11,12 +11,12 @@
     <nav>
         <h2 class="logo">LOGO</h2>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Explore</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
-        <a href=""><button class="primary-btn">Sign In</button></a>
+        <a href="signIn.php"><button class="primary-btn">Sign In</button></a>
     </nav>
 </body>
 </html>
