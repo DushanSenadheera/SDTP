@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <?php include 'navbar.php'; ?>
         <div class="header-content">
             <h3>Let's <span>create</span> <br> a <span>cleaner</span> future <span>together</span></h3>
@@ -39,7 +39,7 @@
         </div>
         <br>
         <div class="layout">
-            <h3 class="sub-heading">Project Eco-Clean</h3>
+            <h3 id="explore" class="sub-heading">Project Eco-Clean</h3>
             <br>
             <div class="cta-section">
                 <div class="img-cmc">
@@ -99,7 +99,7 @@
                 </div>
             </div>
             <br>
-            <h3 class="sub-heading">Contact Us</h3>
+            <h3 id="contact" class="sub-heading">Contact Us</h3>
             <div class="contact">
                 <div class="about-content">
                     <ul>

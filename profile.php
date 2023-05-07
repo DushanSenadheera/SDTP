@@ -27,7 +27,7 @@
                         <input type="tel" name="mobile" value="" placeholder="Mobile" disabled>
                     </form>
                     <section>
-                        <a href="editProfile.jsp"><input type="submit" value="Profile Settings" class="sign-in-btn"></a>
+                        <a href="editProfile.php"><input type="submit" value="Profile Settings" class="sign-in-btn"></a>
                         <br> 
                         <form action="deleteAccount" method="POST">
                             <input type="submit" value="Delete Account" class="del-acc-btn">
