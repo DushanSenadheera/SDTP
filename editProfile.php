@@ -27,7 +27,7 @@
                         <input type="tel" name="mobile" value="" placeholder="Mobile">
                     <section>
                             <input type="submit" value="Update Profile" class="sign-in-btn">
-                        <a href="changePassword.jsp"><input type="button" value="Change Password" class="del-acc-btn"></a>
+                        <a href="changePassword.php"><input type="button" value="Change Password" class="del-acc-btn"></a>
                     </section>
                         </form>
                 </div>

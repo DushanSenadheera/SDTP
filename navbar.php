@@ -9,9 +9,9 @@
 </head>
 <body>
     <nav>
-        <h2 class="logo">LOGO</h2>
+        <a href="index.php"><h2 class="logo">LOGO</h2></a>
         <ul>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="#header">Home</a></li>
             <li><a href="#explore">Explore</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">contact</a></li>

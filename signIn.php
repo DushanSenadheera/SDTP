@@ -21,6 +21,12 @@
                         <br>
                         <input type="password" name="password" placeholder="Password" required>
                         <br>
+                        Sign In as
+                        <select name="title" id="title">
+                            <option value="GTF Member">GTF Member</option>
+                            <option value="GTF Captain">GTF Captain</option>
+                        </select>
+                        <br>
                         <input type="submit" value="Sign In" class="sign-in-btn">
                     </form>
                     <p>
