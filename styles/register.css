@@ -74,6 +74,10 @@ form input{
     margin: 12px;
 }
 
+form small{
+    color: red;
+}
+
 .name{
     display: flex;
     width: 100%;

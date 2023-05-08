@@ -19,7 +19,7 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quasi voluptatem cumque voluptatum! Labore, consequuntur dicta, odit sed et velit, culpa a assumenda at aperiam sunt voluptates veniam quibusdam hic?</p>
             </div>
             <div class="cta">
-                <a href=""><button class="primary-btn">Get to Know</button></a>
+                <a href="#explore"><button class="primary-btn">Get to Know</button></a>
             </div>
         </div>
     </header>
@@ -54,7 +54,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iste soluta ipsa hic autem cupiditate reprehenderit velit dolor incidunt consequatur possimus molestiae fuga, quis tempora. Perspiciatis nulla corrupti explicabo possimus temporibus sapiente eum animi nostrum!
                     </p>
                     <br>
-                    <button class="primary-btn">Become a GTF Member</button>
+                    <a href="register.php"><button class="primary-btn">Become a GTF Member</button></a>
                 </article>
             </div>
             <br>
