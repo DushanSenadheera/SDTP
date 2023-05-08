@@ -8,15 +8,38 @@
     <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 <body>
-    <nav>
-        <a href="index.php"><h2 class="logo">LOGO</h2></a>
-        <ul>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#explore">Explore</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-        <a href="signIn.php"><button class="primary-btn">Sign In</button></a>
-    </nav>
+    <?php
+    
+    session_start();
+    if (isset($_SESSION['email'])) {
+        ?>
+        <nav>
+            <a href="index.php"><h2 class="logo">LOGO</h2></a>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <a href="profile.php"><p><?php echo$_SESSION['email']; ?></p></a>
+        </nav>
+        <?php
+    }
+    else {
+        ?>
+        <nav>
+            <a href="index.php"><h2 class="logo">LOGO</h2></a>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <a href="signIn.php"><button class="primary-btn">Sign In</button></a>
+        </nav>
+        <?php
+    }
+
+    ?>
 </body>
 </html>

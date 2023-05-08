@@ -16,21 +16,26 @@
             <div class="sign-in">
                 <div class="sign-in-form">
                     <h1>Register</h1>
-                    <form action="register" method="POST">
+                    <form action="./server/register.php" method="POST">
                         <div class="name">
-                            <input type="text" name="fname" placeholder="First Name" required>
-                            <input type="text" name="lname" placeholder="Last Name" required>
+                            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
                         </div>
+                        <small id="userName"></small>
                         <br>
-                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <small id="userMail"></small>
                         <br>
-                        <input type="password" name="password" placeholder="Password" required>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <small id="psw"></small>
                         <br>
-                        <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
+                        <small id="confirmPsw"></small>
                         <br>
-                        <input type="tel" name="mobile" placeholder="Mobile" required>
+                        <input type="tel" name="mobile" id="mobile" placeholder="Mobile" required>
+                        <small id="userMobile"></small>
                         <br>
-                        <input type="submit" value="Register" class="sign-in-btn">
+                        <input type="submit" value="Register" class="sign-in-btn" onclick="return regValidate()">
                     </form>
                     <p>
                         Do you have an account?
@@ -43,5 +48,6 @@
         <footer>
         <?php include 'footer.php' ?>
         </footer> 
+        <script src="./scripts/validation.js"></script>
 </body>
 </html>

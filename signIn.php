@@ -16,18 +16,20 @@
             <div class="sign-in">
                 <div class="sign-in-form">
                     <h1>Sign In</h1>
-                    <form action="signIn" method="POST">
-                        <input type="text" name="email" placeholder="Email" required>
+                    <form action="./server/signIn.php" method="POST">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <small id="userMail"></small>
                         <br>
-                        <input type="password" name="password" placeholder="Password" required>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <small id="psw"></small>
                         <br>
                         Sign In as
                         <select name="title" id="title">
-                            <option value="GTF Member">GTF Member</option>
-                            <option value="GTF Captain">GTF Captain</option>
+                            <option value="1">GTF Member</option>
+                            <option value="2">GTF Captain</option>
                         </select>
                         <br>
-                        <input type="submit" value="Sign In" class="sign-in-btn">
+                        <input type="submit" value="Sign In" class="sign-in-btn" onclick="return loginValidate()">
                     </form>
                     <p>
                         Don't you have an account?
@@ -40,5 +42,6 @@
         <footer>
         <?php include 'footer.php' ?> 
         </footer>
+        <script src="./scripts/validation.js"></script>
 </body>
 </html>
