@@ -31,21 +31,29 @@
         <div class="navContent">
             <div class="overview">
                 <h3>Create GTF Captain</h3>
-                <form action="" method="post">
+                <form action="./server/registerCpt.php" method="post">
                     <section>
-                        <input type="text" name="fname" placeholder="First Name">
-                        <input type="text" name="lname" placeholder="Last Name">
+                        <input type="text" name="fname" id="fname" placeholder="First Name">
+                        <input type="text" name="lname" id="lname" placeholder="Last Name">
                     </section>
-                    <input type="email" name="email" placeholder="Email">
+                    <small id="userName"></small>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <small id="userMail"></small>
                     <br>
-                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <small id="psw"></small>
                     <br>
-                    <input type="password" name="confirmPassword" placeholder="Confirm Password">
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                    <small id="confirmPsw"></small>
                     <br>
-                    <input class="primary-btn" type="submit" name="submit" value="Register">
+                    <input type="tel" name="mobile" id="mobile" placeholder="Mobile">
+                    <small id="userMobile"></small>
+                    <br>
+                    <input class="primary-btn" type="submit" name="submit" onclick="return regCptVal()" value="Register">
                 </form>
             </div>
         </div>
     </div>
+    <script src="./scripts/validation.js"></script>
 </body>
 </html>

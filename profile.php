@@ -38,7 +38,6 @@
                         <br>
                         <a href="editProfile.php"><input type="submit" value="Profile Settings" class="sign-in-btn"></a>
                         <br>
-
                         <input type="submit" value="Delete Account" class="del-acc-btn">
 
                     <?php
@@ -47,7 +46,7 @@
                         <a href="editProfile.php"><input type="submit" value="Profile Settings" class="sign-in-btn"></a>
                         <br>
                         <form action="./server/deleteMember.php" method="post">
-                        <input type="submit" value="Delete Account" onclick="return memberAccDel()" class="del-acc-btn">
+                            <input type="submit" value="Delete Account" onclick="return memberAccDel()" class="del-acc-btn">
                         </form>
 
                     <?php
@@ -61,7 +60,7 @@
     </div>
     <?php include 'footer.php' ?>
 
-    <script src="./scripts/validation.js" ></script>
+    <script src="./scripts/validation.js"></script>
 </body>
 
 </html>

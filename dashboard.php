@@ -1,3 +1,10 @@
+<?php
+        session_start();
+
+        if (!isset($_SESSION['adEmail'])) {
+            header("Location: ./admin.php");
+        }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +32,7 @@
                 <li><i class="fas fa-temperature-low"></i> <a href="createCpt.php">GTF Captains</a></li>
                 <li><i class="fas fa-tint"></i> <a href="createStaff.php">Staff</a></li>
                 <li><i class="fas fa-percentage"></i> <a href="article.php">Articles</a></li>
-                <li><i class="fas fa-sign-out-alt"></i> <a href="index.php">Logout</a></li>
+                <li><i class="fas fa-sign-out-alt"></i> <a href="./server/session.php">Logout</a></li>
             </ul>
         </div>
         <div class="navContent">
