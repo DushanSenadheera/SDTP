@@ -60,27 +60,11 @@
             <br>
             <h3 class="sub-heading">Garbage collection map</h3>
             <br>
-            <div class="gmap">
-                <img src="./assets/Google-Maps-Tips.png" alt="">
-            </div>
+            <div id="map"></div>
             <br>
             <h3 class="sub-heading">Articles</h3>
             <div class="posts">
-                <div class="post">
-                    <img src="./assets/Colombo_800x520-1.jpg" alt="">
-                    <h4 class="sub-heading">Post Title</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-                <div class="post">
-                    <img src="./assets/Colombo_800x520-1.jpg" alt="">
-                    <h4 class="sub-heading">Post Title</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-                <div class="post">
-                    <img src="./assets/Colombo_800x520-1.jpg" alt="">
-                    <h4 class="sub-heading">Post Title</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
+                <?php include './server/getArticle.php' ?>
             </div>
             <br>
             <h3 id="about" class="sub-heading">About Us</h3>
@@ -118,6 +102,8 @@
     <footer>
         <?php include 'footer.php'; ?>
     </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCinwbF4gUyRzEGXYpAf0lHyBW3wdYlDx4&callback=initMap&v=weekly" defer></script>
+    <script src="./scripts/GMap.js"></script>
     <script src="./scripts/imgSlider.js"></script>
     <script src="https://kit.fontawesome.com/56016c02ef.js" crossorigin="anonymous"></script>
 </body>

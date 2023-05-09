@@ -31,10 +31,10 @@
         <div class="navContent">
             <div class="overview">
                 <h3>Article</h3>
-                <form action="" method="post">
+                <form action="./server/article.php" method="post" enctype="multipart/form-data">
                     <input type="text" name="title" id="title" placeholder="Article Title">
                     <br>
-                    <input type="file" name="file">
+                    <input type="file" name="fileToUpload" id="fileToUpload">
                     <br>
                     <textarea name="articleContent" id="articleContent" cols="30" rows="10" ></textarea>
                     <br>

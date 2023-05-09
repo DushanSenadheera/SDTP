@@ -13,7 +13,7 @@
             <div class="sign-in">
                 <div class="sign-in-form">
                     <h1>Administration</h1>
-                    <form action="adminLogin" method="POST">
+                    <form action="./server/adminLogin.php" method="POST">
                         <input type="text" name="adminUserName" placeholder="User Name" required>
                         <br>
                         <input type="password" name="adminPassword" placeholder="Password" required>
