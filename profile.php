@@ -31,9 +31,20 @@
                 </form>
                 <section>
                     <?php
-
-                    if ($_SESSION['title'] == 2) {
+                    if ($_SESSION['title'] == 3) {
                     ?>
+                         <br>
+                        <a href="summery.php"><input type="submit" value="Location Summery" class="sign-in-btn"></a>
+                        <br>
+                        <a href="editProfile.php"><input type="submit" value="Profile Settings" class="sign-in-btn"></a>
+                        <br>
+                        <input type="submit" value="Delete Account" class="del-acc-btn">
+                    <?php
+                    }
+                    else if ($_SESSION['title'] == 2) {
+                    ?>
+
+                        <br>
                         <a href="verifyLocation.php"><input type="submit" value="Verify Location" class="sign-in-btn"></a>
                         <br>
                         <a href="editProfile.php"><input type="submit" value="Profile Settings" class="sign-in-btn"></a>
@@ -42,7 +53,10 @@
 
                     <?php
                     } else {
-                    ?>
+                    ?>  
+                        <br>
+                        <a href="addLocation.php"><button>Add Location</button></a>
+                        <br>
                         <a href="editProfile.php"><input type="submit" value="Profile Settings" class="sign-in-btn"></a>
                         <br>
                         <form action="./server/deleteMember.php" method="post">

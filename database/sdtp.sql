@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 09, 2023 at 04:53 PM
+-- Generation Time: May 11, 2023 at 12:28 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `sdtp`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `acceptedloc`
+--
+
+CREATE TABLE `acceptedloc` (
+  `accID` int(11) NOT NULL,
+  `des` varchar(255) NOT NULL,
+  `priority` varchar(30) NOT NULL,
+  `lat` varchar(50) NOT NULL,
+  `lng` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -58,14 +72,9 @@ CREATE TABLE `article` (
 --
 
 INSERT INTO `article` (`articleID`, `title`, `content`, `articleImg`) VALUES
-(1, 'tile', 'article content here', ''),
-(2, 'title 2', 'dasdsad dasd dasdsad', 'uploads/White-Black-Logo.png'),
-(3, 'dsad', 'sadsad dasd', './uploads/user.jpg'),
-(4, 'sad', 'dasd', '../uploads/istockphoto-1190310819-612x612.jpg'),
-(5, 'gfdgfd', 'jgjhj', './uploads/roadnetwork.jpg'),
-(6, 'dsad', 'fddsf', './uploads/images.jpg'),
-(7, 'gfdg', 'fgfdg', 'Google-Maps-Tips.png'),
-(8, 'hhkkhk', 'bnb', 'wrist band design.png');
+(9, 'City Tour', 'Best places to visit around Colombo city', 'caption.jpg'),
+(10, 'Sramadhana campaign', 'successfully held the sramadhana campaign', 'download (1).jpg'),
+(11, 'Waste management', 'waste management system for ABC PVT Ltd', 'download.jpg');
 
 -- --------------------------------------------------------
 
@@ -82,12 +91,29 @@ CREATE TABLE `captain` (
   `mobile` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `captain`
+-- Table structure for table `location`
 --
 
-INSERT INTO `captain` (`captainID`, `fname`, `lname`, `email`, `password`, `mobile`) VALUES
-(2, 'Dushan', 'Senadheera', 'dushan@gmail.com', 'dushan12345', 761231234);
+CREATE TABLE `location` (
+  `locationID` int(11) NOT NULL,
+  `reportedBy` varchar(50) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `lat` varchar(50) NOT NULL,
+  `lng` varchar(50) NOT NULL,
+  `locImg` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `location`
+--
+
+INSERT INTO `location` (`locationID`, `reportedBy`, `description`, `lat`, `lng`, `locImg`) VALUES
+(1, 'jhon@gmail.com', 'dsadsa dsad', '6.916159657011842', '79.86755147094726', 'ck2.PNG'),
+(2, 'jhon@gmail.com', 'sad', '6.917522953196845', '79.87338795776367', 'wrist band design.png'),
+(3, 'jhon@gmail.com', 'asd', '6.923657737316361', '79.88746419067382', 'Capture.PNG');
 
 -- --------------------------------------------------------
 
@@ -109,7 +135,8 @@ CREATE TABLE `member` (
 --
 
 INSERT INTO `member` (`memberID`, `fname`, `lname`, `email`, `password`, `mobile`) VALUES
-(1, 'Jhon', 'Doe', 'jhon@gmail.com', 'jhon12345', 751231234);
+(11, 'User', 'Member', 'member@gmail.com', 'member12345', 761231234),
+(15, 'Dushan', 'Senadheera', 'dushan@gmail.com', 'dushan12345', 751231234);
 
 -- --------------------------------------------------------
 
@@ -127,15 +154,14 @@ CREATE TABLE `staff` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `staff`
---
-
-INSERT INTO `staff` (`staffID`, `fname`, `lname`, `email`, `password`, `mobile`) VALUES
-(1, 'Jhon', 'Doe', 'doe@gmail.com', 'doe12345', 111231234);
-
---
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `acceptedloc`
+--
+ALTER TABLE `acceptedloc`
+  ADD PRIMARY KEY (`accID`);
 
 --
 -- Indexes for table `admin`
@@ -156,6 +182,12 @@ ALTER TABLE `captain`
   ADD PRIMARY KEY (`captainID`);
 
 --
+-- Indexes for table `location`
+--
+ALTER TABLE `location`
+  ADD PRIMARY KEY (`locationID`);
+
+--
 -- Indexes for table `member`
 --
 ALTER TABLE `member`
@@ -172,6 +204,12 @@ ALTER TABLE `staff`
 --
 
 --
+-- AUTO_INCREMENT for table `acceptedloc`
+--
+ALTER TABLE `acceptedloc`
+  MODIFY `accID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
@@ -181,19 +219,25 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `article`
 --
 ALTER TABLE `article`
-  MODIFY `articleID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `articleID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `captain`
 --
 ALTER TABLE `captain`
-  MODIFY `captainID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `captainID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `location`
+--
+ALTER TABLE `location`
+  MODIFY `locationID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `member`
 --
 ALTER TABLE `member`
-  MODIFY `memberID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `memberID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `staff`

@@ -11,6 +11,11 @@ nav{
     z-index: 1;
 }
 
+nav a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
 nav ul li{
     display: inline;
     padding: 2rem;

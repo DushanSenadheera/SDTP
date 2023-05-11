@@ -53,6 +53,29 @@ if ($title == 1) {
 <?php
   }
   $conn->close();
+}else if($title == 3){
+  $sql = "SELECT * FROM staff WHERE email = '$email'";
+  $result = $conn->query($sql);
+
+  if ($result->num_rows > 0) {
+
+    while ($row = $result->fetch_assoc()) {
+      $fname = $row['fname'];
+      $lname = $row['lname'];
+      $email = $row['email'];
+      $phone = $row['mobile'];
+    }
+  } else {
+  ?>
+
+    <script>
+      alert("Something went wrong");
+      window.location.href = "../profile.php";
+    </script>
+
+<?php
+  }
+  $conn->close();
 }
 
 ?>

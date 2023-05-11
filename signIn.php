@@ -27,6 +27,7 @@
                         <select name="title" id="title">
                             <option value="1">GTF Member</option>
                             <option value="2">GTF Captain</option>
+                            <option value="3">Staff</option>
                         </select>
                         <br>
                         <input type="submit" value="Sign In" class="sign-in-btn" onclick="return loginValidate()">

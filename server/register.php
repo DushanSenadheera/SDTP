@@ -12,6 +12,7 @@ $sql = "INSERT INTO member (fname, lname, email, password, mobile)
 VALUES ('$fname', '$lname', '$email', '$password', '$mobile');";
 
 if ($conn->multi_query($sql) === TRUE) {
+  echo "New records created successfully";
   header("Location: ../signIn.php");
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
