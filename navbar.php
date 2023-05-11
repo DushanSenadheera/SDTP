@@ -16,10 +16,10 @@
         <nav>
             <a href="index.php"><h2 class="logo">LOGO</h2></a>
             <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#explore">Explore</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="index.php#header">Home</a></li>
+                <li><a href="index.php#explore">Explore</a></li>
+                <li><a href="index.php#about">About</a></li>
+                <li><a href="index.php#contact">contact</a></li>
             </ul>
             <a href="profile.php"><p><?php echo$_SESSION['email']; ?></p></a>
         </nav>
@@ -30,10 +30,10 @@
         <nav>
             <a href="index.php"><h2 class="logo">LOGO</h2></a>
             <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#explore">Explore</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="index.php#header">Home</a></li>
+                <li><a href="index.php#explore">Explore</a></li>
+                <li><a href="index.php#about">About</a></li>
+                <li><a href="index.php#contact">contact</a></li>
             </ul>
             <a href="signIn.php"><button class="primary-btn">Sign In</button></a>
         </nav>

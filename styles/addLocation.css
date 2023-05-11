@@ -4,8 +4,15 @@
 }
 
 .add-location-form form{
-    position: absolute;
-    top: 50%;
-    left: 50%;  
-    transform: translate(-50%, -50%);
+    padding: 4rem;
+}
+
+#map {
+    width: 60%;
+    height: 30vh;
+}
+
+
+textarea{
+    width: 100%;
 }

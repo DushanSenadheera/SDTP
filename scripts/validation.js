@@ -7,13 +7,18 @@ function regValidate() {
     const confirmPsw = document.getElementById("confirmPassword").value;
     const mobile = document.getElementById("mobile").value;
 
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (mail.value.match(mailformat)) {
+        return true;
+    }
+
     if (fname == "" || lname == "") {
         document.getElementById("userName").innerHTML = "Please enter your name";
         return false;
-    } else if(mail == "") {
+    } else if (mail == "") {
         document.getElementById("userMail").innerHTML = "Please enter a valid Email";
         return false;
-    }else if (psw.length < 8) {
+    } else if (psw.length < 8) {
         document.getElementById("psw").innerHTML = "Password must be at least 8 characters";
         return false;
     } else if (psw != confirmPsw) {
@@ -55,10 +60,10 @@ function regCptVal() {
     if (fname == "" || lname == "") {
         document.getElementById("userName").innerHTML = "Please enter your name";
         return false;
-    } else if(mail == "") {
+    } else if (mail == "") {
         document.getElementById("userMail").innerHTML = "Please enter a valid Email";
         return false;
-    }else if (psw.length < 8) {
+    } else if (psw.length < 8) {
         document.getElementById("psw").innerHTML = "Password must be at least 8 characters";
         return false;
     } else if (psw != confirmPsw) {
@@ -87,10 +92,10 @@ function regStfVal() {
     if (fname == "" || lname == "") {
         document.getElementById("userName").innerHTML = "Please enter your name";
         return false;
-    } else if(mail == "") {
+    } else if (mail == "") {
         document.getElementById("userMail").innerHTML = "Please enter a valid Email";
         return false;
-    }else if (psw.length < 8) {
+    } else if (psw.length < 8) {
         document.getElementById("psw").innerHTML = "Password must be at least 8 characters";
         return false;
     } else if (psw != confirmPsw) {

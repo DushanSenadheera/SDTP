@@ -1,17 +1,21 @@
 .location-content{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+}
+
+img{
+    width: 30%;
+    height: 35vh;
 }
 
 #accordionExample{
-    padding: 2rem;
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 45%;
+    width: 70%;
+    margin: 0 auto;
 }
 
-.accordion-item{
+#map{
     width: 100%;
+    height: 100%;
 }
